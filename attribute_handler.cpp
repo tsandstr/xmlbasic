@@ -8,3 +8,9 @@ void BooleanAttributeHandler::set(const string& xml_value) {
 	else
 		throw BadAttributeException{}
 	return;
+}
+
+void StringAttributeHandler::set(const string& xml_value) {
+	value = xml_value;
+	return;
+}

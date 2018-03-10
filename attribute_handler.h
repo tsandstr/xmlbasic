@@ -12,7 +12,14 @@ public:
 
 class BooleanAttributeHandler : public AttributeHandler {
 public:
-	void set(string xml_value);
+	void set(const string& xml_value);
 private:
 	bool value;
+};
+
+class StringAttributeHandler : public AttributeHandler {
+public:
+	void set(const string& xml_value);
+private:
+	string value;
 };
